@@ -1,0 +1,180 @@
+   /* Started Here */
+/* Menu Section Menu page eng fuad */
+/* ========== FILTER BUTTONS ========== */
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.filter-buttons button.active {
+  background-color: #444;
+  color: white;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+/* ========== CARDS LAYOUT (MOBILE-FIRST) ========== */
+.yollo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.boss {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 500px; /* Set fixed or minimum height */
+}
+
+/* Optional: Equalize all .boss cards inside their grid */
+.yollo {
+  align-items: stretch;
+}
+
+
+/* Image Section */
+.xampp_1 {
+  background-color: aqua;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+  .xampp_1  img{
+    margin-left: 10%;
+  }
+
+.xampp_1 .images-cart img {
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Text Section */
+.xampp_2 {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+}
+
+.xampp_2 h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.xampp_2 p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options h6 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.options .fa-cart-shopping {
+  height: 3rem;
+  width: 3rem;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+ 
+/* ========== TABLETS ========== */
+@media (min-width: 768px) {
+  .yollo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .this {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .read_button {
+    width: fit-content;
+  }
+
+  .xampp_2 h1 {
+    font-size: 2.2rem;
+  }
+
+  .xampp_2 p {
+    font-size: 1.1rem;
+  }
+
+  .randomised h1 {
+    font-size: 2.5rem;
+  }
+
+  .randomised p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ========== LAPTOPS / DESKTOPS ========== */
+@media (min-width: 1024px) {
+  .yollo {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .boss {
+    max-width: 27rem;
+    height: auto;
+  }
+
+  .promose_1 img {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .randomised h1 {
+    font-size: 3rem;
+  }
+
+  .randomised p {
+    font-size: 1.3rem;
+  }
+
+  .read_button {
+    font-size: 1.2rem;
+  }
+}
+
+/*  Section Menu Ends Here (Eng Fuad)*/
+
