@@ -229,5 +229,112 @@ Tasty Thursdays</span>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63796.055118885255!2d45.3312512!3d2.0545536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sso!4v1746281765115!5m2!1sen!2sso" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>
+
+    
+                           <!-- Our Customers Say  eng ai-->
+<section class="testimonials">
+<h2>What Says Our Customers</h2>
+<div class="testimonial-container">
+<div class="testimonial-box">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  </p>
+  <h4>Moana Michell</h4>
+  <span>magna aliqua</span>
+</div>
+<div class="testimonial-box">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  </p>
+  <h4>Mike Hamell</h4>
+  <span>magna aliqua</span>
+</div>
+</div>
+
+<div class="avatars">
+<img src="https://images.unsplash.com/photo-1568880893176-fb2bdab44e41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwaGFwcHklMjBwcm9maWxlfGVufDB8fDB8fHww" alt="Moana" class="avatar" />
+<img src="https://images.unsplash.com/photo-1562885780-2b6f6f160b3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWVuJTIwaGFwcHklMjBwcm9maWxlfGVufDB8fDB8fHww" alt="Mike" class="avatar active" />
+</div>
+
+<div class="nav-dots">
+<span></span>
+<span class="active"></span>
+<span></span>
+</div>
+</section>
+
+                            <!-- Footer Section  eng ai-->
+<footer style="background-color: #222; color: #fff; padding: 40px 0; text-align: center;">
+  <div class="footer-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Location</p>
+      <p>Call: +252770962015</p>
+      <p>Email: demo@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Feane</h3>
+      <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f" style="color:white;"></i></a>
+        <a href="#"><i class="fab fa-twitter" style="color:white;"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in" style="color:white;"></i></a>
+        <a href="#"><i class="fab fa-instagram" style="color:white;"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Opening Hours</h3>
+      <p>Everyday</p>
+      <p>10.00 Am -10.00 Pm</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 20px; font-size: 14px;">© 2025 All Rights Reserved By Free Html Templates</p>
+  <p style="font-size: 14px;">Distributed By EngAI</p>
+</footer>
+
+                             <!-- Scripts -->
+<script>
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("navMenu");
+
+burger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  burger.classList.toggle("toggle");
+});
+// Wuxuu muujiyaa dhammaan shay-yada marka hore
+window.onload = () => {
+  // Samee badhanka 'All' inuu noqdo mid firfircoon (active) marka hore
+  const allButton = document.querySelector('.filter-buttons button[onclick*="\'all\'"]');
+  if (allButton) {
+    allButton.classList.add('active');
+  }
+  filterMenu('all', allButton); // Muuji dhammaan shay-yada marka hore
+};
+
+function filterMenu(category, activeButton) {
+  const itemsToFilter = document.querySelectorAll('.yollo .boss'); // La beddelay '.card' oo laga dhigay '.yollo .boss'
+  const buttons = document.querySelectorAll('.filter-buttons button');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  if (activeButton) { // Hubi in activeButton la soo gudbiyay
+    activeButton.classList.add('active');
+  }
+
+
+  itemsToFilter.forEach(item => {
+    if (category === 'all' || item.classList.contains(category)) {
+      item.style.display = 'block'; // Ama qaabka kale ee aad u isticmaasho muujinta (e.g., 'flex', 'grid')
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
   </body>
 </html>
